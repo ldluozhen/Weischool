@@ -1,0 +1,168 @@
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/drawerlayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:clipChildren="false"
+android:clipToPadding="false"
+app:edPosition="1"
+app:edMenuSize="260dp"
+app:edMenuBackground="#ee333333">
+
+<!--content-->
+<!--<android.support.design.widget.CoordinatorLayout-->
+<!--android:id="@+id/content"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="-- 请选择感兴趣的品类 --"
+            android:textAlignment="center"
+            android:textColor="@color/oil"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal" >
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:numColumns="auto_fit"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:columnWidth="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:textAlignment="center"
+        android:horizontalSpacing="10dp"
+        android:id="@+id/classify_gview"
+        />
+    <!--<Button-->
+        <!--android:id="@+id/addgoods_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="添加商品" />-->
+
+
+    <!--<Button-->
+        <!--android:id="@+id/classify_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/primary_darker"-->
+        <!--android:text="Button" />-->
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+<!--menu-->
+<com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+    android:id="@+id/menulayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.administrator.weischool.view.XCRoundImageView
+            android:id="@+id/roundImageView"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="36dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/head"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_myupload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle2"
+            android:padding="8dp"
+            android:text="上传物品"
+            android:textColor="@color/primary"
+            android:textColorHighlight="@color/primary_darker"
+            android:textSize="22sp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_mybusiness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle2"
+            android:padding="8dp"
+            android:text="我的交易"
+            android:textColor="@color/primary"
+            android:textColorHighlight="@color/primary_darker"
+            android:textSize="22sp" />
+
+<!--
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle2"
+            android:padding="8dp"
+            android:text="用户设置"
+            android:textColor="@color/primary"
+            android:textColorHighlight="@color/primary_darker"
+            android:textSize="22sp" />
+-->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_map"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_rectangle2"
+            android:padding="8dp"
+            android:text="我的位置"
+            android:textColor="@color/primary"
+            android:textColorHighlight="@color/primary_darker"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+
+
+</com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

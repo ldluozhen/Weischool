@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/goods_image"
+        android:layout_width="115dp"
+        android:layout_height="127dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="127dp"
+      android:orientation="vertical"
+      android:layout_marginLeft="10dp">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+       android:layout_marginBottom="11dp"
+       android:text="物品名称"
+       android:textSize="18sp"
+       android:textAlignment="center"
+       android:textColor="#000"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="物品介绍"
+          android:textSize="18sp"
+          android:textAlignment="center"
+          android:textColor="#000"/>
+
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/goods_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:text="产品名称" />
+
+        <EditText
+            android:id="@+id/goods_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:focusable="false"
+            android:textColor="#000"
+            android:text="产品详细介绍" />
+
+        <EditText
+            android:id="@+id/goods_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            android:text="日期"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

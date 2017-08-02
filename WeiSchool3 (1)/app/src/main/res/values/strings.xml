@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">微校园二手交易</string>
+    <string name="add">App</string>
+    <string name="listall">List All</string>
+    <string name="login">登录</string>
+    <string name="menu">菜单</string>
+</resources>
